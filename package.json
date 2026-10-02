@@ -1,0 +1,21 @@
+{
+  "name": "paper-grading-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "本地多题型试卷自动判分与重评后端（API + CLI）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist-test/",
+    "start": "node dist/cli.js serve",
+    "demo": "npm run build && node dist/cli.js demo",
+    "cli": "node dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
