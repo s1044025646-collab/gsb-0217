@@ -1,0 +1,20 @@
+{
+  "name": "exam-grader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "本地多题型客观题自动判分与重评后端（API + CLI）",
+  "type": "module",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "demo": "node demo/demo.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  }
+}
+
